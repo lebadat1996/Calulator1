@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cacucolor</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div>
+    <h1>Cacucolor</h1>
+    <table border="1">
+        <tr>
+            <input type="text" id="result"/>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" id="number1" onclick="getValue(id)"/></td>
+            <td><input type="button" value="2" id="number2" onclick="getValue(id)" /></td>
+            <td><input type="button" value="3" id="number3" onclick="getValue(id)"/></td>
+            <td><input type="button" value="+" id="sum" onclick= "getSymbol(id)"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" id="number4" onclick="getValue(id)"/></td>
+            <td><input type="button" value="5" id="number5" onclick="getValue(id)"/></td>
+            <td><input type="button" value="6" id="number6" onclick="getValue(id)"/></td>
+            <td><input type="button" value="-" id=" Sub"    onclick="getSymbol(id)"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" id="number7" onclick="getValue(id)"/></td>
+            <td><input type="button" value="8" id="number8" onclick="getValue(id)"/></td>
+            <td><input type="button" value="9" id="number9" onclick="getValue(id)"/></td>
+            <td><button id="multi" value="*" onclick="getSymbol(id)">x</button></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="C" id="numberC" onclick="deleteResult(id)"/></td>
+            <td><input type="button" value="0" id="number0" onclick="getValue(id)"/></td>
+            <td><input type="button" value="=" id="equal"   onclick="showResult(id)"/></td>
+            <td><input type="button" value="/" id="division" onclick="getSymbol(id)"/></td>
+        </tr>
+    </table>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
